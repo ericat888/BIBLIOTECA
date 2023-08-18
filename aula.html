@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes surgir {
+            from {scale: 0.1;}
+            to {scale: 1;}
+        }
+        .ativo {
+            background-color: gray;
+        }
+
+        button:not(ativo){
+            background-color: green;
+        }
+    </style>
+<body>
+    <div id="caixa">
+
+    </div>
+    <button id="op1">Clique</button>
+    <button id="op2">Clique</button>
+    <button id="op3">Clique</button>
+
+    <script>
+        let op1=document.getElementById('op1');
+        let op2=document.getElementById('op2');
+        let op3=document.getElementById('op3');
+
+        op1.addEventListener("click", ()=>{
+            op1.classList.add('ativo');
+            op2.classList.remove('ativo');
+            op3.classList.remove('ativo');
+
+        })
+
+        op2.addEventListener("click", ()=>{
+            op2.classList.add('ativo');
+            op1.classList.remove('ativo');
+            op3.classList.remove('ativo');
+
+        })
+
+        op3.addEventListener("click", ()=>{
+            op3.classList.add('ativo');
+            op1.classList.remove('ativo');
+            op2.classList.remove('ativo');
+
+        })
+
+
+        for (let i = 0; i < 10; i++) {       
+        let espaco=document.getElementById('caixa')
+        let imagem=document.createElement('img')
+        espaco.appendChild(imagem);
+        imagem.src="capa1.jpg"
+        imagem.height=50;
+        imagem.style.animation='surgir'+ " "  + '1s';
+    }
+    </script>
+</body>
+</html>

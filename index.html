@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <img src="img/Design sem nome.png" alt="" class="imagem-inicial">
+
+    <h1 class="titulo">Biblioteca - Cadastro de Livros</h1>
+
+<div class="conteudo">
+    <div class="inputs">
+    <input id="nomeLivro" placeholder="Nome" type="text">
+    <input id="autorLivro" placeholder="Autor" type="text">
+    <input id="anoLivro" placeholder="Ano" type="text">
+</div>
+    <button onclick="adicionar()" >Adicionar Livro</button>
+    <button onclick="mostrarLivros()">Mostrar</button>
+    <button onclick="limparBiblioteca()">Limpar Biblioteca</button>
+
+    <h2 id="cadastre">Cadastre um livro</h2>
+</div>
+    
+    
+    
+
+    <div id="biblioteca-container"></div>
+
+    <div class="carrossel">
+        <img src="" alt="Imagem do Carrossel" id="carrosselImagem">
+        <button id="anterior"><</button>
+        <button id="proximo">></button>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    
+
+</body>
+</html>

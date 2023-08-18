@@ -1,0 +1,79 @@
+/*RESET CSS*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #E5DBD2;
+
+}   
+
+/*FIM DO RESET*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(font/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url(font/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(font/OpenSans-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url(font/OpenSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(font/Roboto-Regular.ttf);
+}
+
+
+.imagem-inicial {
+    height: auto;
+    width: 100%;
+}
+
+.titulo {
+    text-align: center;
+    margin: -290px;
+    font: 700 50px 'Poppins Bold';
+}
+
+.inputs {
+    padding: 25px 100px;
+}   
+
+#nomeLivro, #autorLivro, #anoLivro {
+    padding: 15px 70px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.714);
+    margin-left: 100px;
+}
+
+.carrossel {
+    display: flex;
+    height: 570px;
+    background-color: #e1dfff;
+    margin-top: 350px;
+    margin-left: 100px;
+   
+}
+
+.conteudo {
+    margin-top: 500px;
+}
+
+
+
+
+
+    
+   
